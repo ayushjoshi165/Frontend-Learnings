@@ -115,7 +115,9 @@ css
 ```
 p {
   color: blue;
-}   ```
+}  
+
+```
 Class Selector:
 
 Selects all elements with a specific class attribute.
@@ -123,7 +125,9 @@ css
 ```
 .highlight {
   background-color: yellow;
-}   ```
+}
+
+ ```
 ID Selector:
 
 Selects a single element with a specific id attribute.
@@ -131,7 +135,9 @@ css
 ```
 #header {
   font-size: 24px;
-}   ```
+}  
+
+```
 Descendant Selector:
 
 Selects an element that is a descendant of another specified element.
@@ -147,7 +153,9 @@ css
 ```
 ul > li {
   list-style-type: square;
-}   ```
+}  
+
+```
 Adjacent Sibling Selector:
 
 Selects an element that is directly preceded by a specified element.
@@ -155,7 +163,9 @@ css
 ```
 h2 + p {
   font-weight: bold;
-}   ```
+}
+
+```
 Attribute Selector:
 
 Selects elements based on the presence or value of their attributes.
@@ -163,7 +173,8 @@ css
 ```
 input[type="text"] {
   border: 1px solid #ccc;
-}   ```
+}  
+```
 Pseudo-class Selector:
 
 Selects elements based on their state or position.
@@ -171,7 +182,9 @@ css
 ```
 a:hover {
   color: red;
-}   ```
+}
+
+  ```
 Pseudo-element Selector:
 
 Selects a specific part of an element.
@@ -179,13 +192,35 @@ css
 ```
 p::first-line {
   font-weight: bold;
-}   ```
+}  
+ ```
 These selectors can also be combined for more complex selections. For example:
 
 css
 ```
 ul.nav > li.active a {
   color: red;
-}   ```
+}
+
+```
 This selector targets an <a> element that is a child of an <li> element with the class "active," which in turn is a child of a <ul> element with the class "nav."
+
+### Box Model
+
+```
++-------------------+
+| Margin |
+| +---------------+ |
+| | Border | |
+| | +-----------+ | |
+| | | Padding | | |
+| | | +-------+ | | |
+| | | |Content| | | |
+| | | +-------+ | | |
+| | +-----------+ | |
+| +---------------+ |
++-------------------+
+
+```
+
 
